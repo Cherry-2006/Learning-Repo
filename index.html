@@ -5,25 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>This for Learning Git</title>
     <style>
-        h1{
-            font-family: sans-serif;
-        }
-        li{
-            margin: 10px;
-        }
         code{
             color: purple;
         }
     </style>
 </head>
 <body>
-    <h1>If you want to update the existing folder to the git the do these steps</h1>
-    <ol>
-        <li><code>git add .</code></li>
-        <li><code>git commit -m "Message"</code></li>
-        <li><code>git pull origin master</code> If the repo is used and saved by someone the you need to do this</li>
-        <li><code>git push origin master</code> This makes the changes that you have done in the local storage</li>
-    </ol>
-    <p>So now i have changed The color of the Code to purple, let me try to update it with git to github</p>
+    <h1 style="text-decoration: underline; color: purple;">Git things to remember</h1>
+    <div class="initialzation">
+        <h3>You need to first give the Name and email to the git For initialzation</h3>
+        <ul class="list-disc">existing
+            <li><code>git config --global user.name "Cherry"</code></li>
+            <li><code>git config --global user.email "saicharanbk2006@gmail.com"</code></li>
+        </ul>
+    </div>
+    <div class="creation">
+        <h3>Then for creation you  need to do these steps in the folder you need to upload</h3>
+        <ul>
+            <li><code>git init</code></li>
+            <li><code>git add README.md </code> (Optional)</li>
+            <li><code>git commit -m "your comment"</code></li>
+            <li><code>git add .</code></li>
+            <li><code>git status </code> (All files should be in green then you are ready to go)</li>
+            <li><code>git remote add origin (Your Repo link, which ends with .git)</code></li>
+            <li><code>git push -u origin master (or) git push origin master </code> (Where master the branch which you have selected)</li>
+        </ul>
+    </div>
+    <div class="update">
+        <h3>If you want to update the existing folder to the git the do these steps</h3>
+        <ol>
+            <li><code>git add .</code></li>
+            <li><code>git commit -m "Message"</code></li>
+            <li><code>git pull origin master</code> (If the repo is used and saved by someone the you need to do this)</li>
+            <li><code>git push origin master</code> (This makes the changes that you have done in the local storage)</li>
+        </ol>
+    </div>
+    <div class="toignore">
+        <h3>To ignore a certian file</h3>
+        <ul>
+            <li>Create a file called .gitignore</li>
+            <li>Enter the file name with extention and the file will be excluded</li>
+            <li>to ignore all files of same type then <code> " *.(filetype) "</code></filetype></li>
+            <li>Note you should create in the git folder</li>
+        </ul>
+    </div>
+    <div class="addtional">
+        <h3>Additional commands</h3>
+        <ul>
+            <li><code>git reset</code> (This will reset the files and types)</li>
+        </ul>
+    </div>
 </body>
 </html>
