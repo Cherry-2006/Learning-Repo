@@ -5,24 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>This for Learning Git</title>
     <style>
+        body{
+            background-color: black;
+        }
         code{
             color: purple;
+        }
+        .head{
+            display: flex;
+            overflow: auto;
+            white-space: nowrap;
+
+        }
+        div{
+            margin: 10px;
+            padding: 5px;
+            border: 2px purple solid;
+            border-radius: 25px;
+            background-color: white;
+            transition-property: all;
+            transition-duration: .4s;
+            transition-timing-function: ease-in-out;
+        }
+        div :hover{
+            background-color: rgb(143, 143, 143);
+            border-radius: 30px;
+            padding: 20px;
+            transition-property: all;
+            transition-duration: .4s;
+            transition-timing-function: ease-in-out;
         }
     </style>
 </head>
 <body>
     <h1 style="text-decoration: underline; color: purple;">Git things to remember</h1>
-    <div class="initialzation">
-        <h3>You need to first give the Name and email to the git For initialzation</h3>
-        <ul class="list-disc">existing
-            <li><code>git config --global user.name "Cherry"</code></li>
-            <li><code>git config --global user.email "saicharanbk2006@gmail.com"</code></li>
-        </ul>
-    </div>
-    <div class="creation">
-        <h3>Then for creation you  need to do these steps in the folder you need to upload</h3>
-        <ul>
-            <li><code>git init</code></li>
+    <container class="head">
+        <div class="initialzation">
+            <h3>You need to first give the Name and email to the git For initialzation</h3>
+            <ul class="list-disc">existing
+                <li><code>git config --global user.name "Cherry"</code></li>
+                <li><code>git config --global user.email "saicharanbk2006@gmail.com"</code></li>
+            </ul>
+        </div>
+        <div class="creation">
+            <h3>Then for creation you  need to do these steps in the folder you need to upload</h3>
+            <ul>
+                <li><code>git init</code></li>
             <li><code>git add README.md </code> (Optional)</li>
             <li><code>git commit -m "your comment"</code></li>
             <li><code>git add .</code></li>
@@ -55,5 +83,6 @@
             <li><code>git reset</code> (This will reset the files and types)</li>
         </ul>
     </div>
+    </container>
 </body>
 </html>
